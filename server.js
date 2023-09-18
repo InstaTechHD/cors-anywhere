@@ -22,7 +22,7 @@ var checkRateLimit = require('./lib/rate-limit')(process.env.CORSANYWHERE_RATELI
 var cors_proxy = require('./lib/cors-anywhere');
 cors_proxy.createServer({
   originBlacklist: originBlacklist,
-  originWhitelist: ['https://moopa.live', 'https://demo.moopa.live', 'https://beta.moopa.live', 'https://www.artplayer.org'],
+  originWhitelist: ['https://shizuru.vercel.app/', 'https://demo.moopa.live', 'https://beta.moopa.live', 'https://www.artplayer.org'],
   requireHeader: ['origin', 'x-requested-with'],
   checkRateLimit: checkRateLimit,
   removeHeaders: [
